@@ -84,7 +84,6 @@ body{
 .card__activity--high {
     width: 20vw;
     height: 60vh;
-
     overflow: hidden;
 }
 .container__activity{
@@ -102,14 +101,13 @@ height: 60vh;
 .card__activity--square {
     width: 20vw;
     height: 32vh;
-
+    overflow: hidden;
   
 }
 .card__activity--rect {
     width: 20vw;
     height: 20vh;
-
-
+    overflow: hidden;
 }
 .photo
 {
@@ -140,22 +138,26 @@ height: 60vh;
 }
 .photo__activity--square
 {
+    top: -15vh;
     max-width: 200%;
-    max-height: 90%;
+    max-height: 200%;
     width: 20vw;
+    height: 60vh;
 }
 .photo__activity--rect
 {
-    max-width: 120%;
-    max-height:80%;
+    max-width: 220%;
+    max-height:220%;
     width: 20vw;
+    height: 22vh;
     
 }
 .photo__activity--large
 {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 120%;
+    max-height: 120%;
     width: 20vw;
+    height: 25vh;
 }
 .description{
     position: absolute;
@@ -171,7 +173,11 @@ height: 60vh;
     background-color:rgb(255, 255, 255);
     border-radius: 0 30% 30% 0 ;
     height: 100%;
-    width: 60%;
+    width: 55%;
+}
+.description__popular--position{
+    bottom: -8px;
+    
 }
 .description__activity{
     position: absolute;
@@ -185,6 +191,11 @@ height: 60vh;
     color: black;
     font-weight: bold;
     }
+.description__activity--position{
+    bottom: -7px;
+    }
+
+
 .title {
    width: 100%;
 }
