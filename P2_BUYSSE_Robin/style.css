@@ -9,11 +9,31 @@ body{
 /* header sidebar footer*/
 .l-section{
     border-radius: 5%;
+    display: flex;
+}
+.l-section__global{
+    border-radius: 5%;
+    padding: 0 3vw 0 3vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.l-section__header{
+    width: 100%;
+    height: 200px;
 }
 .l-section__accomodation{
-    width: 800px;
-    height: 600px;
-
+    width: 64vw;
+    height: 80vh;
+}
+.l-section__popular{
+    width: 24vw;
+    height: 80vh;
+}
+.l-section__activity{
+    width: 92vw;
+    height: 70vh;
+    margin: 3vh 3vw 3vh 3vw;
 }
 
 .l-article{
@@ -24,10 +44,16 @@ body{
 }
 .l-article__accomodation{
     background-color: #F2F2F2;
-    width: 800px;
-    height: 600px;
-
+    width: 64vw;
+    height: 80vh;
 }
+.l-article__popular{
+    background-color: #F2F2F2;
+    }
+.l-article__activity{
+    width: 92vw;
+    height: 70vh;
+}    
 
 /*------------------------MODULE-----------------------------------------*/
 /*widget list title btn bloc form*/
@@ -36,11 +62,54 @@ body{
     position: relative ;
 }
 .card__accomodation {
-    border: 3px white solid;
+    border: 7px white solid;
     background-color: white;
-    width: 200px;
-    height: 180px;
+    width: 16vw;
+    height: 27vh;
     
+}
+.card__popular {
+    border: 5px white solid;
+    border-radius: 10%;
+    background-color: white;
+    width: 20vw;
+    height:18vh;
+    
+}
+.card__activity {
+    border-radius: 10%;
+    background-color: white;
+    box-shadow: 0 3px 3px #F2F2F2, 0 3px 3px #F2F2F2;
+}
+.card__activity--high {
+    width: 20vw;
+    height: 60vh;
+
+    overflow: hidden;
+}
+.container__activity{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 20vw;
+height: 60vh;   
+}
+.card__activity--large {
+    width: 20vw;
+    height: 27vh;
+   
+}
+.card__activity--square {
+    width: 20vw;
+    height: 32vh;
+
+  
+}
+.card__activity--rect {
+    width: 20vw;
+    height: 20vh;
+
+
 }
 .photo
 {
@@ -48,6 +117,45 @@ body{
     position: absolute;
     max-width: 100%;
     max-height: 100%;
+}
+.photo__popular
+{
+    border-radius: 10%;
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+}
+.photo__activity
+{
+    border-radius: 10%;
+    position: absolute;
+}
+.photo__activity--high
+{
+    right : -12vw;
+    max-width: 300%;
+    max-height: 300%;
+    height: 55vh;
+    
+}
+.photo__activity--square
+{
+    max-width: 200%;
+    max-height: 90%;
+    width: 20vw;
+}
+.photo__activity--rect
+{
+    max-width: 120%;
+    max-height:80%;
+    width: 20vw;
+    
+}
+.photo__activity--large
+{
+    max-width: 100%;
+    max-height: 100%;
+    width: 20vw;
 }
 .description{
     position: absolute;
@@ -57,8 +165,28 @@ body{
     height: 30%;
     width: 100%;
 }
+.description__popular{
+    position: absolute;
+    right: 5%;
+    background-color:rgb(255, 255, 255);
+    border-radius: 0 30% 30% 0 ;
+    height: 100%;
+    width: 60%;
+}
+.description__activity{
+    position: absolute;
+    bottom: 0;
+    background-color:rgb(255, 255, 255);
+    border-radius: 0 0 30% 30% ;
+    height: 5vh;
+    width: 19vw;
+    padding: 0.5vw;
+    font-size: 1.5em;
+    color: black;
+    font-weight: bold;
+    }
 .title {
-   width: 800px;
+   width: 100%;
 }
 
 /*--------------------------STATE--------------------------------------------*/
