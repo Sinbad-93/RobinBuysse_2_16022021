@@ -1,16 +1,42 @@
-/*--------------------------BASE--------------------------------------*/
+/*-------SUMMARY : ------------*/
+/*BASE-GLOBAL FONT SIZE-------------*****7____until line 37***----------*/
+/* HEADER NAV SECTION FOOTER--------*****38____until line 134***-------*/
+/* INTERACTIVE SEARCH HEADER, LOGOS *****135____until line 233***-----*/
+/* CARDS and PHOTO and DESCRIPTION--*****233___until line 440***-----*/
+
+/*--------------------------BASE---GLOBAL FONT SIZE---------until line 37-------------------------*/
 /* p body h1 h2  */
 body{
     display: flex;
     flex-wrap: wrap;
     font-family: 'Raleway', sans-serif;
 }
-h1{
+h2{
     font-size: 150%;
 }
-
-/*--------------------------LAYOUT-------------------------------------*/
-/* header sidebar footer*/
+section > header > h2 {
+    font-size: 130%;
+    margin : 5vh 0 0 2vw;
+}
+.l-section__header > p{
+    font-size: 100%;
+}
+.text-big {
+    width: 100%;
+    margin-top: 0;
+    font-size: 120%;
+    margin-left : 2vw;
+    font-weight: bold;
+ }
+ .title_activity{
+    font-size: 130%;
+}
+.h2_hotel_name{
+    font-weight: bold;
+    display: flex;
+    }
+/* HEADER NAV SECTION FOOTER ******until line 134*******/
+/*-------------------HEADER AND NAV-----------------------------------*/
 header{
     display: flex;
     width: 100%;
@@ -18,7 +44,10 @@ header{
     flex-wrap: nowrap;
     justify-content: space-between;
 }
-.TopHeader{
+.logo{
+    margin-left: 3vw;
+}
+.Siteheader{
 margin : 2vh 0 2vh 0;
 }
 nav{
@@ -36,22 +65,19 @@ nav > a{
     text-decoration: none;
     color: black;
 }
-/* nav selected */
+/* nav blue bar */
 .picker{
-    padding-top: -2vh;
     border: 2px solid;
     border-color: rgb(0, 100, 250) transparent transparent transparent;
     color : rgb(0, 100, 250)
 }
-
-article > header > h1 {
-    font-size: 130%;
-    margin : 5vh 0 0 2vw;
-}
-
+/*---------------------------GLOBAL LAYOUT----------ALL SECTIONS---------------------------------*/
 .l-section{
     border-radius: 5%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 5%;
 }
 .l-section__global{
     border-radius: 5%;
@@ -65,21 +91,19 @@ article > header > h1 {
     line-height: 1vh;
     margin-bottom: 1vh;
 }
-.l-section__header > p{
-    font-size: 100%;
-}
-.interactive{
-    line-height: 8vh;
-}
+
 .l-section__accomodation{
     width: 60vw;
     height: 80vh;
+    background-color: #F2F2F2;
+    align-content: space-between;
 }
 .l-section__popular{
     width: 28vw;
     height: 80vh;
+    background-color: #F2F2F2;
 }
-.l-section > article > header {
+.l-section > header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -89,26 +113,7 @@ article > header > h1 {
     height: 70vh;
     margin: 3vh 1.5vw 3vh 1.5vw;
 }
-
-.l-article{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    border-radius: 5%;
-}
-.l-article__accomodation{
-    background-color: #F2F2F2;
-    width: 64vw;
-    height: 80vh;
-    align-content: space-between;
-}
-.l-article__popular{
-    background-color: #F2F2F2;
-    }
-.l-article__activity{
-    width: 92vw;
-    height: 70vh;
-}    
+/*-----------------------------------------------------FOOTER-----------------------------------*/
 footer{
     display: flex;
     width: 100%;
@@ -127,24 +132,12 @@ footer >div{
     margin-left: 3vw;
     margin-top : 3vh;
 }
-/*------------------------MODULE-----------------------------------------*/
-/*widget list title btn bloc form*/
-.logo{
-    margin-left: 3vw;
-}
-/*logo populaire*/
-.fa-chart-line{
-    height: 20px;
-    margin : 6vh 4vw 0 2vw;
-    font-size: 130%;
-}
-.fa-star{
-    color :rgb(0, 100, 250);
-    font-size: 100%;
-}
-.empty{
-    color : #c5b5b5;
-}
+/* INTERACTIVE SEARCH HEADER, LOGOS *******until line 233*****/
+/*---------------------------------------------INTERACTIVE SEARCH HEADER----------------------------------------*/
+.interactive-header{
+    line-height: 8vh;
+    }
+/*INPUT*/
 .search {
     display: flex;
     width: 350px;
@@ -177,11 +170,12 @@ footer >div{
     border-color: transparent;
     cursor: pointer;
 }
-
+/*FILTERS*/
 .filters{
     font-weight: bold;
     font-size: 100%;}
 .filters > a {
+    position: relative;
     border-radius: 50px/50px;
     border : 2px solid;
     border-color: #F2F2F2 #F2F2F2 #F2F2F2 transparent ;
@@ -200,19 +194,32 @@ footer >div{
     height:3px;
     border-radius: 50%;
     padding: 1em;
-    background-color: rgb(255, 255, 255);
-    margin-left: -10px;
+    background-color: rgb(248, 245, 245);
+    bottom: 0px;
+    left: 0px;
 }
 .filters > a > i{
     position: relative;
     border-radius: 50%;
-    padding: 0.6em;
+    padding: 12px;
     background-color: rgba(0, 100, 250,0.1);
     color: #0065FC;
     margin-left: -10px;
     margin-right : 0.5em;
 }
-.fa-info{ position: relative;
+/*-------------------------------------------------LOGOS-----------------------------------*/
+/*logo for popular*/
+.fa-chart-line{
+    height: 20px;
+    margin : 6vh 4vw 0 2vw;
+    font-size: 130%;
+}
+.fa-star{
+    color :rgb(0, 100, 250);
+    font-size: 80%;
+}
+.fa-info{ 
+    position: relative;
     border-radius: 50%;
     padding:  0.4em 0.7em 0.4em 0.7em;
     border : solid 2px;
@@ -220,24 +227,12 @@ footer >div{
     color: #0065FC;
     margin-left: -10px;
     margin-right : 0.5em;}
-
-.interactive > i{
-    border-radius: 25%;
-    border : 1px solid black;
-    padding: 0.5em;
-    background-color: rgba(0, 100, 250,0.1);
-    color: black;
-    
+.empty{
+    color : #c5b5b5;
 }
-span > i{
-    color: rgb(0, 100, 250);
-    margin-right : 0.5em;
-}
-span {
-    font-size: 100%;
-}
-
-
+/*----------------------CARDS and PHOTO and DESCRIPTION---------*******until line 439****----------*/
+/*-----------------------------------------------------layout, decoration, size-------------*/
+/*STANDARDS*/
 .card {
     border-radius: 10%;
     position: relative ;
@@ -267,17 +262,18 @@ span {
     background-color: white;
     box-shadow: 0 3px 3px #F2F2F2, 0 3px 3px #F2F2F2;
 }
+.container__activity{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20vw;
+    height: 60vh;   
+    }
+/*PARTICULAR SIZE*/
 .card__activity--high {
     width: 20vw;
     height: 60vh;
     overflow: hidden;
-}
-.container__activity{
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-width: 20vw;
-height: 60vh;   
 }
 .card__activity--large {
     width: 20vw;
@@ -295,6 +291,7 @@ height: 60vh;
     height: 20vh;
     overflow: hidden;
 }
+/*STANDARD PHOTOS*/
 .photo
 {
     border-radius: 10% 10% 0 0 ;
@@ -303,25 +300,6 @@ height: 60vh;
     max-height: 100%;
     width: 16vw;
     height: 17vh;
-}
-.photo__accomodation__redim{
-    max-width: 200%;
-    max-height:200%;
-    width: 17vw;
-    height: 28vh;
-    top : -22%;
-}
-.photo__accomodation__redim2{
-    max-width: 200%;
-    max-height:200%;
-    width: 16vw;
-    height: 40vh;
-    top : -55%;
-}
-.photo__redim{
-    max-width: 200%;
-    max-height:200%;
-    width: 11vw;
 }
 .photo__popular
 {
@@ -335,6 +313,31 @@ height: 60vh;
     border-radius: 10%;
     position: absolute;
 }
+/*PARTICULAR PHOTOS SIZE*/
+/*Hotel de la mer*/
+.photo__accomodation__resize{
+    max-width: 200%;
+    max-height:200%;
+    width: 17vw;
+    height: 28vh;
+    top : -22%;
+}
+/*Hotel Amina*/
+.photo__accomodation__resize2{
+    max-width: 200%;
+    max-height:200%;
+    width: 16vw;
+    height: 40vh;
+    top : -55%;
+}
+/*Hotel Bleu-Blanc*/
+.photo__resize{
+    max-width: 200%;
+    max-height:200%;
+    width: 10vw;
+    top : -52%;
+}
+/*Vieux port et calanques*/
 .photo__activity--high
 {
     right : -12vw;
@@ -343,6 +346,7 @@ height: 60vh;
     height: 55vh;
     
 }
+/*Pomègues*/
 .photo__activity--square
 {
     top: -15vh;
@@ -351,6 +355,7 @@ height: 60vh;
     width: 20vw;
     height: 60vh;
 }
+/*Frioul*/
 .photo__activity--rect
 {
     max-width: 220%;
@@ -359,6 +364,7 @@ height: 60vh;
     height: 22vh;
     
 }
+/*Longchamp  NDGarde*/
 .photo__activity--large
 {
     max-width: 120%;
@@ -366,6 +372,8 @@ height: 60vh;
     width: 20vw;
     height: 25vh;
 }
+/*DESCRIPTIONS*/
+/*STANDARDS*/
 .description{
     position: absolute;
     bottom: 5%;
@@ -375,36 +383,36 @@ height: 60vh;
     width: 100%;
 
 }
-.description__animahotel {
-    height: 41%;
-    bottom: -5%;
-    border-radius: 0 0 0 0;
-}
-.description > p {
+.description > p,h3 {
     padding: 0 0 0 1vw;
-    line-height: 2px;
-    font-size: 100%;
+    line-height: 5px;
+    font-size: 95%;
     color: black;
     margin-top: 0.8em;
 }
-.description__popular > p{
-    padding: 0 0 0 1vw;
-    font-size: 100%;
-    color: black;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
+/*POPULAR*/
 .description__popular{
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     right: 5%;
     background-color:rgb(255, 255, 255);
     border-radius: 0 30% 30% 0 ;
     height: 100%;
     width: 55%;
 }
-.description__popular > .star {
-    margin-top: 12%;
+.description__popular > p,h3{
+    padding: 0 0 0 1vw;
+    font-size: 115%;
+    color: black;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
+.card__popular > a > .description__popular > h3 {
+    line-height: 20px; margin-bottom: -5px;
+}
+/*ACTIVITY*/
 .description__activity{
     position: absolute;
     bottom: 0;
@@ -416,25 +424,17 @@ height: 60vh;
     font-size: 100%;
     color: black;
     }
-.description__activity > p {
+
+.description__activity > h3 {
     font-weight: bold;
     margin: 1vh 0 0 1vw;
 }
+/*Particular Case*/
 .description__activity--position{
     bottom: -7px;
     }
-.HotelName{
-font-weight: bold;
-}
-.title {
-   width: 100%;
-   margin-top: 0;
-   font-size: 120%;
-   margin-left : 2vw;
-   font-weight: bold;
-}
-.title_activity{
-    font-size: 130%;
-}
-/*--------------------------STATE--------------------------------------------*/
-/*is-active is-visible */
+.description__animahotel {
+        height: 41%;
+        bottom: -5%;
+        border-radius: 0 0 0 0;
+    }
