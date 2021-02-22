@@ -31,7 +31,7 @@ section > header > h2 {
  .title_activity{
     font-size: 130%;
 }
-.h2_hotel_name{
+.h3_hotel_name{
     font-weight: bold;
     display: flex;
     }
@@ -645,7 +645,7 @@ section > header > h2 {
     min-height: 100%;
     min-width: 100%;
 }
-    }
+    
 
 /*-----------------------------------------------------FOOTER-----------------------------------*/
 footer{
@@ -663,7 +663,7 @@ footer >div{
     margin-left: 8vw;
     margin-top : 1vh;
     margin-bottom: 2vh;
-}
+}}
 
 /***------------------------------------TABLETTE----------------------------------------------*/
 
@@ -785,7 +785,7 @@ nav{
 .l-section > header{
     display: flex;
     justify-content: center;
-    height: 10vh;
+    height: 100px;
 }
 section > header > h2 {
     margin:0; 
@@ -805,12 +805,13 @@ section > header > h2 {
 }
 .card__accomodation{
     width: 80%;
+    height: 200px;
     margin-bottom: 20px;
 }
 .photo{
     max-width:200%; 
     max-height:200%;
-    width: 400px;
+    width: 600px;
     height: 300px;
     left: -50px;
     top: -70px;
@@ -821,7 +822,7 @@ section > header > h2 {
 }
 .l-section__popular{
     width: 90%;
-    height: 100vh;
+    height: 800px;
     margin: auto;
     flex-direction: column;
     align-content: space-between;
@@ -832,7 +833,7 @@ section > header > h2 {
 }
 .card__popular{
     width: 80%;
-    height: 25vh;
+    height: 200px;
 }
 .photo__popular{
     min-height: 100%;
@@ -840,7 +841,7 @@ section > header > h2 {
 }
 .l-section__activity
 {
-    height: auto;
+    height: 1800px;
     width: 100%;
 }
 .description__popular{
@@ -855,13 +856,14 @@ section > header > h2 {
     border-radius: 0;
 }
 .card__activity{
-    width: 85vw;
-    height: 27vh;
+    width: 70vw;
+    height: 250px;
 }
 .container__activity{
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 90%;
+    height: 450px;
     margin : 0;
 }
 .container__activity >  article{
@@ -877,7 +879,7 @@ section > header > h2 {
     min-height: 100%;
     min-width: 100%;
 }
-    }
+    
 
 /*-----------------------------------------------------FOOTER-----------------------------------*/
 footer{
@@ -898,6 +900,79 @@ footer >div{
 }
 }
 
-/*@media only screen and (min-width: 768px) and (max-width: 991px){
+@media only screen and (min-width: 769px) and (max-width: 969px){
+section > header > h2{
+    font-size: 70%;
+}
 
-}*/
+.description > .h3_hotel_name{
+        font-size: 60%;
+        line-height: 12px;
+}
+.description > p{
+    font-size: 60%;
+    line-height: 2px;
+}
+.description{
+    height: 40%;
+}
+.description__animahotel{
+    bottom: 5%;
+}
+.description__popular >p{
+    font-size: 60%;
+}
+.description__popular >h3{
+    font-size: 70%;
+    line-height: 5px;
+}
+.description__activity{
+    height: 20%;
+}
+.description__activity >h3{
+    font-size: 70%;
+    line-height: 9px;
+}
+.fa-star, .star{
+    font-size: 40%;
+    line-height: 2px;
+}
+
+}
+
+@media only screen and (min-width: 970px) and (max-width: 1400px){
+.description > .h3_hotel_name{
+        font-size: 90%;
+        line-height: 12px;
+}
+.description > p{
+    font-size: 80%;
+    line-height: 2px;
+}
+.description{
+    height: 40%;
+}
+.description__animahotel{
+    bottom: 5%;
+}
+.description__popular >p{
+    font-size: 80%;
+    line-height: 12px;
+}
+.description__popular >h3{
+    font-size: 80%;
+    line-height: 12px;
+}
+.description__activity{
+    height: 20%;
+}
+.description__activity >h3{
+    line-height: 17px;
+}
+.fa-star, .star{
+    font-size: 60%;
+    line-height: 2px;
+}
+
+
+}
