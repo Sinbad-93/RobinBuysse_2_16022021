@@ -66,7 +66,7 @@ nav > a{
     color: black;
 }
 /* nav blue bar */
-.picker{
+#picker{
     border: 2px solid;
     border-color: rgb(0, 100, 250) transparent transparent transparent;
     color : rgb(0, 100, 250)
@@ -146,6 +146,10 @@ footer >div{
     border : 1px solid;
     border-color: #F2F2F2 ;
     margin-bottom: 2%;
+}
+/*cacher logo loupe*/
+.fa-search{
+    display: none;
 }
 .search > i{
     border-radius: 7px 0 0 7px;
@@ -438,3 +442,462 @@ footer >div{
         bottom: -5%;
         border-radius: 0 0 0 0;
     }
+
+/***********************------------MEDIA QUERIES----------------****************************/
+
+
+
+@media screen and (max-width: 460px){
+
+.body{
+   display: flex;
+   
+}    
+
+.logo{
+    width: 50%;
+}
+
+/*SITE HEADER*/
+.l-section__header{
+    margin: 120px 5% 0 5%;
+}
+header{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    width: 100%;
+}
+/*Texte d'entrée*/
+.l-section__header > h1 {
+    line-height: 30px;
+    font-size: 1.4em;
+}
+.l-section__header > p {
+    font-size: 0.9em;
+}
+/* nav blue bar */
+.responsiveNav{
+    width: 48%;
+    text-align: center;
+    margin:0;
+    padding-bottom: 20px;
+    border: 2px solid;
+    border-color: transparent transparent #F2F2F2 transparent;
+}
+#picker{
+    border-color: transparent transparent rgb(0, 100, 250) transparent;
+}
+#inscription{
+    position: absolute;
+    order : -1;
+    top: 30px;
+    right: 10px;
+}
+/*INTERACTIVE HEADER*/
+.interactive-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 30px;
+}
+.interactive-header > span{
+    font-size: 0.8em;
+}
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.search > button {
+    width: 40px;
+    border-radius: 20%;
+}
+/*cacher texte Rechercher*/
+.search > button > span {
+    display: none;
+}
+/*afficher search logo*/
+.fa-search{
+    display: block;
+}
+.filters{
+    display: flex;
+    flex-wrap: wrap;
+}
+.filters > span{
+    width: 100%;
+}
+.filters > a{
+    height: 39px;
+    font-size: 0.9em;
+    margin: 10px 5px 0 0;
+    padding: 0 10px 0 0;
+}
+/*cacher une partie de la bordure des filtres*/
+.filters > a > .circle{
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    top: -2px;
+    left: -6px;
+}
+.filters > a > i{
+    padding: 14px;
+    margin-left: 0px;
+    margin-right : 0.5em;
+    bottom: 1px;
+}
+
+/*-----CORPS------*/
+section > header{
+    height: 20vh;
+}
+section > header > h2 {
+    margin:0; 
+}
+.l-section{
+    border-radius: 0;
+}
+
+.l-section__accomodation{
+    height: auto;
+    width: 100%;
+    order: 1;
+    background-color: white;
+    flex-direction: column;
+}
+.l-section__accomodation > article{
+    display: flex;
+    justify-content: space-around;
+}
+.card__accomodation{
+    width: 85%;
+    margin-bottom: 20px;
+}
+.photo{
+    max-width:200%; 
+    max-height:200%;
+    width: 400px;
+    height: 300px;
+    left: -50px;
+    top: -70px;
+}
+.description{
+    height: 50%;
+    bottom: -12%;
+}
+.l-section__popular{
+    width: 100%;
+    flex-direction: column;
+}
+.l-section__popular > article {
+    display: flex;
+    justify-content: space-around;
+}
+.card__popular{
+    width: 85%;
+}
+.photo__popular{
+    min-height: 100%;
+    min-width: 100%;
+}
+.l-section__activity
+{
+    height: auto;
+    width: 100%;
+}
+.description__popular{
+    width: 75%;
+    left: 40%;
+}
+/*inutile ?*/
+.l-section__activity > article {
+    display: flex;
+    justify-content: space-around;
+    border : none;
+    border-radius: 0;
+}
+.card__activity{
+    width: 85vw;
+    height: 27vh;
+}
+.container__activity{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin : 0;
+}
+.container__activity >  article{
+    display: flex;
+    justify-content: space-around;
+}
+.description__activity{
+    width: 100%;
+    height: 40%;
+    bottom: -10%;
+}
+.photo__activity{
+    min-height: 100%;
+    min-width: 100%;
+}
+    }
+
+/*-----------------------------------------------------FOOTER-----------------------------------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    font-size  :100%;
+    background-color: #F2F2F2;
+}
+footer >div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 8vw;
+    margin-top : 1vh;
+    margin-bottom: 2vh;
+}
+
+/***------------------------------------TABLETTE----------------------------------------------*/
+
+
+
+
+
+@media only screen and (min-width: 460px) and (max-width: 768px){
+
+.body{
+   display: flex;
+}    
+.logo{
+    width: 30%;
+}
+/*SITE HEADER*/
+.l-section__header{
+    margin: 120px 5% 0 5%;
+}
+header{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    width: 100%;
+    margin : 0;
+}
+/*Texte d'entrée*/
+.l-section__header > h1 {
+    margin-top: 3vh;
+    line-height: 30px;
+    font-size: 1.4em;
+}
+.l-section__header > p {
+    font-size: 1.3em;
+}
+/* nav blue bar */
+.responsiveNav{
+    font-size: 1.3em;
+    width: 48%;
+    text-align: center;
+    margin:0;
+    padding-bottom: 20px;
+    border: 2px solid;
+    border-color: transparent transparent #F2F2F2 transparent;
+}
+#picker{
+    border-color: transparent transparent rgb(0, 100, 250) transparent;
+}
+#inscription{
+    position: absolute;
+    order : -1;
+    top: 30px;
+    right: 10px;
+    font-size: 1.3em;
+}
+/*INTERACTIVE HEADER*/
+.interactive-header{
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 30px;
+}
+.interactive-header > span{
+    font-size: 1.1em;
+}
+.search {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.search > button {
+    width: 40px;
+    border-radius: 20%;
+}
+/*cacher texte Rechercher*/
+.search > button > span {
+    display: none;
+}
+/*afficher search logo*/
+.fa-search{
+    display: block;
+}
+.filters{
+    display: flex;
+    flex-wrap: wrap;
+}
+.filters > span{
+    width: 15%;
+    align-self: center;
+}
+.filters > a{
+    height: 39px;
+    font-size: 1.2em;
+    margin: 10px 5px 0 0;
+    padding: 0 10px 0 0;
+}
+/*cacher une partie de la bordure des filtres*/
+.filters > a > .circle{
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    top: -2px;
+    left: -6px;
+}
+.filters > a > i{
+    padding: 11px;
+    margin-left: 0px;
+    margin-right : 0.5em;
+    bottom: 1px;
+}
+
+/*-----CORPS------*/
+.l-section{
+    border-radius: 0;
+}
+.l-section > header{
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+}
+section > header > h2 {
+    margin:0; 
+    font-size: 2em;
+}
+.l-section__accomodation{
+    margin: auto;
+    height: auto;
+    width: 90%;
+    order: 1;
+    background-color: white;
+    flex-direction: column;
+}
+.l-section__accomodation > article{
+    display: flex;
+    justify-content: space-around;
+}
+.card__accomodation{
+    width: 80%;
+    margin-bottom: 20px;
+}
+.photo{
+    max-width:200%; 
+    max-height:200%;
+    width: 400px;
+    height: 300px;
+    left: -50px;
+    top: -70px;
+}
+.description{
+    height: 50%;
+    bottom: -12%;
+}
+.l-section__popular{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    flex-direction: column;
+    align-content: space-between;
+}
+.l-section__popular > article {
+    display: flex;
+    justify-content: space-around;
+}
+.card__popular{
+    width: 80%;
+    height: 25vh;
+}
+.photo__popular{
+    min-height: 100%;
+    min-width: 100%;
+}
+.l-section__activity
+{
+    height: auto;
+    width: 100%;
+}
+.description__popular{
+    width: 60%;
+    left: 50%;
+}
+/*inutile ?*/
+.l-section__activity > article {
+    display: flex;
+    justify-content: space-around;
+    border : none;
+    border-radius: 0;
+}
+.card__activity{
+    width: 85vw;
+    height: 27vh;
+}
+.container__activity{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin : 0;
+}
+.container__activity >  article{
+    display: flex;
+    justify-content: space-around;
+}
+.description__activity{
+    width: 100%;
+    height: 40%;
+    bottom: -10%;
+}
+.photo__activity{
+    min-height: 100%;
+    min-width: 100%;
+}
+    }
+
+/*-----------------------------------------------------FOOTER-----------------------------------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    font-size  :100%;
+    background-color: #F2F2F2;
+}
+footer >div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 8vw;
+    margin-top : 1vh;
+    margin-bottom: 2vh;
+}
+}
+
+/*@media only screen and (min-width: 768px) and (max-width: 991px){
+
+}*/

@@ -2,6 +2,8 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
+  <!-- media queries ne fonctionne pas sans cette ligne !-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Titre de la page</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,9 +15,9 @@
 <header class="Siteheader">
     <object class='logo' data="Reservia.svg" type="image/svg+xml"></object>
     <nav>
-        <a class="picker" href="#Hebergements">Hébergements</a>
-       <a href="#Activites">Activités</a>
-        <a href="#"><strong style="color : rgb(0, 100, 250);">S'inscrire</strong></a>
+        <a id="picker" class="responsiveNav" href="#Hebergements">Hébergements</a>
+       <a class="responsiveNav" href="#Activites">Activités</a>
+        <a id="inscription" href="#"><strong style="color : rgb(0, 100, 250);">S'inscrire</strong></a>
     </nav>
 </header>
 
@@ -29,11 +31,11 @@
     <div class="search" >
         <i class="fas fa-map-marker-alt"></i> 
         <input type="text" value="Marseille, France">
-        <button>Rechercher</button>
+        <button><span>Rechercher</span> <i class="fas fa-search"></i></button>
     </div>
-    <div class='filters'>Filtres 
+    <div class='filters'><span>Filtres</span> 
         <a><span class="circle"></span><i class="fas fa-money-bill-wave">
-        </i>Economique</a><a><span class="circle"></span><i class="fas fa-child">
+        </i><span>Economique</span> </a><a><span class="circle"></span><i class="fas fa-child">
         </i>Famillial</a><a><span class="circle"></span><i class="fas fa-heart">
         </i>Romantique</a><a><span class="circle"></span><i class="fas fa-dog">
         </i>Animaux autorisés</a></div>
@@ -78,7 +80,7 @@
     </a></div></article>
 <article><div class="card card__accomodation"><a href="">
     <img class="photo photo__accomodation__resize2" src="images/hebergements/4_small/carte6.jpg" alt=""/>
-    <div class="description description__animahotel"><h3 class='h2_hotel_name'>Hotel Amina</h3><p>Nuit à partir de 96€</p>
+    <div class="description description__animahotel"><h3 class='h2_hotel_name'>Hotel chez Amina</h3><p>Nuit à partir de 96€</p>
     <p>
 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p></div>
     </a></div></article> <p class="text-big">Afficher plus</p>
@@ -112,7 +114,7 @@
 <section id="Activites"  class="l-section l-section__activity "> 
   <header ><h2 class="text-big title_activity">Activités à Marseille</h2></header>
 
-    <article class="card card__activity card__activity--high">
+    <article >
     <div class="card card__activity card__activity--high"><a href="">
     <img class="photo__activity photo__activity--high" src="images/activites/4_small/activity1.jpg" alt=""/>
     <div class="description__activity"><h3>Vieux port</h3> </div>
@@ -120,12 +122,12 @@
 
 <div class="card container__activity">
 
-<article class="card card__activity card__activity--square">
+<article >
     <div class="card card__activity card__activity--square"><a href="">
     <img class="photo__activity  photo__activity--square" src="images/activites/4_small/activity2.jpg" alt=""/>
     <div class="description__activity description__activity--position"><h3>Fort de Pomègues</h3></div>
     </a></div></article>
-<article class="card card__activity card__activity--rect ">
+<article >
     <div class="card card__activity card__activity--rect "><a href="">
     <img class="photo__activity photo__activity--rect" src="images/activites/4_small/activity3.jpg" alt=""/>
     <div class="description__activity description__activity--position"><h3>Iles du Frioul</h3></div>
@@ -140,12 +142,12 @@
 
 <div class="card  container__activity">
 
-<article class="card card__activity card__activity--large">
+<article >
     <div class="card card__activity card__activity--large"><a href="">
     <img class="photo__activity photo__activity--large" src="images/activites/4_small/activity6.jpg" alt=""/>
     <div class="description__activity"><h3>Notre-Dame-de-la-Garde</h3></div>
     </a></div></article>
-<article class="card card__activity card__activity--large">
+<article >
     <div class="card card__activity card__activity--large"><a href="">
     <img class="photo__activity photo__activity--large " src="images/activites/4_small/activity5.jpg" alt=""/>
     <div class="description__activity "><h3>Parc Longchamp</h3></div>
