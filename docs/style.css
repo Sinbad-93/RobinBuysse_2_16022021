@@ -1,0 +1,1112 @@
+/*-------SUMMARY : ------------*/
+/*BASE-GLOBAL FONT SIZE-------------*****7____until line 37***----------*/
+/* HEADER NAV SECTION FOOTER--------*****38____until line 134***-------*/
+/* INTERACTIVE SEARCH HEADER, LOGOS *****135____until line 233***-----*/
+/* CARDS and PHOTO and DESCRIPTION--*****233___until line 445***-----*/
+/*------------------MEDIA QUERIES***line 450 -------------------------*/
+/*--------------------------BASE---GLOBAL FONT SIZE---------until line 37-------------------------*/
+/* p body h1 h2  */
+body{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Raleway', sans-serif;
+}
+h2{
+    font-size: 2vw;
+}
+section > header > h2 {
+    font-size: 1.8vw;
+    margin : 50px 0 0 2vw;
+}
+.l-section__header > p{
+    font-size: 1.5vw;
+}
+.text-big {
+    width: 100%;
+    margin-top: 0;
+    font-size: 1.6vw;
+    margin-left : 2vw;
+    font-weight: bold;
+ }
+ .title_activity{
+    font-size: 1.8vw;
+}
+.h3_hotel_name{
+    font-weight: bold;
+    display: flex;
+    }
+/* HEADER NAV SECTION FOOTER ******until line 134*******/
+/*-------------------HEADER AND NAV-----------------------------------*/
+header{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.logo{
+    margin-left: 3vw;
+}
+.Siteheader{
+margin : 20px 0 20px 0;
+}
+nav{
+    margin-right : 1vw;
+    color :rgb(0, 100, 250);
+    margin-top : 20px;
+    font-size: 1.4vw;
+}
+a{
+    cursor : pointer;
+}
+nav > a{
+    padding : 40px 0 0 0;
+    margin : 0 3vw 0 0 ;
+    text-decoration: none;
+    color: black;
+}
+/* nav blue bar */
+#picker{
+    border: 2px solid;
+    border-color: rgb(0, 100, 250) transparent transparent transparent;
+    color : rgb(0, 100, 250)
+}
+/*---------------------------GLOBAL LAYOUT----------ALL SECTIONS---------------------------------*/
+.l-section{
+    border-radius: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.l-section__global{
+    border-radius: 5%;
+    padding: 0 3vw 0 3vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.l-section__header{
+    width: 100%;
+    line-height: 10px;
+    margin-bottom: 10px;
+}
+
+.l-section__accomodation{
+    width: 60vw;
+    height: 800px;
+    background-color: #F2F2F2;
+    align-content: space-between;
+}
+.l-section__popular{
+    width: 28vw;
+    height: 800px;
+    background-color: #F2F2F2;
+}
+.l-section > header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+.l-section__activity{
+    width: 92vw;
+    height: 700px;
+    margin: 30px 1.5vw 30px 1.5vw;
+}
+/*-----------------------------------------------------FOOTER-----------------------------------*/
+footer{
+    display: flex;
+    width: 100%;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    line-height: 50px;
+    font-size  :1.4vw;
+    background-color: #F2F2F2;
+}
+footer >div{
+    display: flex;
+    flex-direction: column;
+    width: 28vw;
+    margin-left: 3vw;
+    margin-top : 30px;
+}
+/* INTERACTIVE SEARCH HEADER, LOGOS *******until line 233*****/
+/*---------------------------------------------INTERACTIVE SEARCH HEADER----------------------------------------*/
+.interactive-header{
+    line-height: 50px;
+    }
+/*INPUT*/
+.search {
+    display: flex;
+    width: 500px;
+    height:40px;
+    border-radius: 12px;
+    border : 1px solid;
+    border-color: #F2F2F2 ;
+    margin-bottom: 2%;
+}
+/*cacher logo loupe*/
+.fa-search{
+    display: none;
+}
+.search > i{
+    border-radius: 7px 0 0 7px;
+    padding: 10px 16px 0px 16px;
+    margin-right: 5px;
+    background-color: #F2F2F2;
+}
+.search > input{
+    height: 85%;
+    width: 65%;
+    border-color : transparent;
+    font-size: 1.4vw;
+    font-weight: bold;
+    color : black;
+}
+.search > button{
+    height: 100%;
+    width: 120px;
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0 10px 10px 0px;
+    border-color: transparent;
+    cursor: pointer;
+}
+/*FILTERS*/
+.filters{
+    font-weight: bold;
+    font-size: 1.3vw;}
+.filters > a {
+    position: relative;
+    border-radius: 50px/50px;
+    border : 2px solid;
+    border-color: #F2F2F2 #F2F2F2 #F2F2F2 transparent ;
+    padding: 0.5em;
+    margin-right : 0.5em;
+    margin-left : 1em;
+    font-size: 1.5vw; 
+}
+.filters > a:hover{
+    opacity : 0.7;
+}
+/*cacher une partie de la bordure des filtres*/
+.filters > a > .circle{
+    position :absolute;
+    width: 3px;
+    height:3px;
+    border-radius: 50%;
+    padding: 1em;
+    background-color: rgb(248, 245, 245);
+    bottom: 0px;
+    left: 0px;
+}
+.filters > a > i{
+    position: relative;
+    border-radius: 50%;
+    padding: 12px;
+    background-color: rgba(0, 100, 250,0.1);
+    color: #0065FC;
+    margin-left: -10px;
+    margin-right : 0.5em;
+}
+/*-------------------------------------------------LOGOS-----------------------------------*/
+/*logo for popular*/
+.fa-chart-line{
+    height: 20px;
+    margin : 60px 4vw 0 2vw;
+    font-size: 1.5vw;
+}
+.fa-star{
+    color :rgb(0, 100, 250);
+    font-size: 1vw;
+}
+.fa-info{ 
+    position: relative;
+    border-radius: 50%;
+    padding:  0.4em 0.7em 0.4em 0.7em;
+    border : solid 2px;
+    border-color: #F2F2F2;
+    color: #0065FC;
+    margin-left: -10px;
+    margin-right : 0.5em;}
+.empty{
+    color : #c5b5b5;
+}
+/*----------------------CARDS and PHOTO and DESCRIPTION---------*******until line 439****----------*/
+/*-----------------------------------------------------layout, decoration, size-------------*/
+/*STANDARDS*/
+.card {
+    border-radius: 10%;
+    position: relative ;
+
+}
+.card__accomodation {
+    overflow: hidden;
+    border: 4px white solid;
+    background-color: white;
+    width: 16vw;
+    height: 230px;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0,0.1), 3px 3px 9px rgba(0, 0, 0,0.1);
+}
+
+.card__popular {
+    overflow: hidden;
+    border: 4px white solid;
+    border-radius: 10%;
+    background-color: white;
+    width: 24vw;
+    height:180px;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0,0.1), 3px 3px 9px rgba(0, 0, 0,0.1);
+}
+
+.card__activity {
+    border-radius: 10%;
+    background-color: white;
+    box-shadow: 0 3px 3px #F2F2F2, 0 3px 3px #F2F2F2;
+}
+.container__activity{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20vw;
+    height: 600px;   
+    }
+/*PARTICULAR SIZE*/
+.card__activity--high {
+    width: 20vw;
+    height: 600px;
+    overflow: hidden;
+}
+.card__activity--large {
+    width: 20vw;
+    height: 270px;
+   
+}
+.card__activity--square {
+    width: 20vw;
+    height: 320px;
+    overflow: hidden;
+  
+}
+.card__activity--rect {
+    width: 20vw;
+    height: 200px;
+    overflow: hidden;
+}
+/*STANDARD PHOTOS*/
+.photo
+{
+    border-radius: 10% 10% 0 0 ;
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    width: 16vw;
+    height: 170px;
+}
+.photo__popular
+{
+    border-radius: 10%;
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+}
+.photo__activity
+{
+    border-radius: 10%;
+    position: absolute;
+}
+/*PARTICULAR PHOTOS SIZE*/
+/*Hotel de la mer*/
+.photo__accomodation__resize{
+    max-width: 200%;
+    max-height:200%;
+    width: 17vw;
+    height: 280px;
+    top : -22%;
+}
+/*Hotel Amina*/
+.photo__accomodation__resize2{
+    max-width: 200%;
+    max-height:200%;
+    width: 16vw;
+    height: 400px;
+    top : -55%;
+}
+/*Hotel Bleu-Blanc*/
+.photo__resize{
+    max-width: 200%;
+    max-height:200%;
+    width: 12vw;
+    height: 400px;
+    top : -52%;
+}
+/*Vieux port et calanques*/
+.photo__activity--high
+{
+    right : -12vw;
+    max-width: 300%;
+    max-height: 300%;
+    height: 550px;
+    
+}
+/*Pomègues*/
+.photo__activity--square
+{
+    top: -150px;
+    max-width: 200%;
+    max-height: 200%;
+    width: 20vw;
+    height: 600px;
+}
+/*Frioul*/
+.photo__activity--rect
+{
+    max-width: 220%;
+    max-height:220%;
+    width: 20vw;
+    height: 220px;
+    
+}
+/*Longchamp  NDGarde*/
+.photo__activity--large
+{
+    max-width: 120%;
+    max-height: 120%;
+    width: 20vw;
+    height: 250px;
+}
+/*DESCRIPTIONS*/
+/*STANDARDS*/
+.description{
+    position: absolute;
+    bottom: 5%;
+    background-color:rgb(255, 255, 255);
+    border-radius: 0 0 30% 30% ;
+    height: 30%;
+    width: 100%;
+
+}
+.description > p,h3 {
+    padding: 0 0 0 1vw;
+    line-height: 5px;
+    font-size: 1.1vw;
+    color: black;
+    margin-top: 0.8em;
+}
+/*POPULAR*/
+.description__popular{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    right: -3%;
+    background-color:rgb(255, 255, 255);
+    border-radius: 0 30% 30% 0 ;
+    height: 100%;
+    width: 55%;
+}
+.description__popular > p,h3{
+    padding: 0 0 0 1vw;
+    font-size: 1.2vw;
+    color: black;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.card__popular > a > .description__popular > h3 {
+    line-height: 20px; margin-bottom: -5px;
+}
+/*ACTIVITY*/
+.description__activity{
+    position: absolute;
+    bottom: 0;
+    background-color:rgb(255, 255, 255);
+    border-radius: 0 0 30% 30% ;
+    height: 50px;
+    width: 19vw;
+    padding: 0.5vw;
+    font-size: 1.3vw;
+    color: black;
+    }
+
+.description__activity > h3 {
+    font-weight: bold;
+    margin: 10px 0 0 1vw;
+}
+/*Particular Case*/
+.description__activity--position{
+    bottom: -7px;
+    }
+.description__animahotel {
+        height: 41%;
+        bottom: -5%;
+        border-radius: 0 0 0 0;
+    }
+.description__hotelmer{
+    height: 40%;
+    bottom : -5%;
+    }
+
+/***********************------------MEDIA QUERIES----------------****************************/
+/* SMARTPHONE lines-453/721 *---* TABLETTE lines-722/997 *---* LITTLE DESKTOP lines-999/1112-----*/
+/***--------------------------------SMARTPHONE------------------------------------------------*/
+@media screen and (max-width: 460px){
+.body{
+    display: flex;
+    
+ }    
+ /*SITE HEADER*/
+ .l-section__header{
+    align-items: initial;
+    margin: 30px 5% 40px 5%;
+ }
+ header{
+     display: flex;
+     width: 100%;
+     flex-wrap: wrap;
+ }
+ .logo{
+    width: 35%;
+}
+ nav{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content:space-around;
+     width: 100%;
+     font-size: 1.3em;
+ }
+ nav >a {
+     padding-top: 13px;
+ }
+ /*Titre d'accroche*/
+ .l-section__header > h1 {
+     line-height: 30px;
+     font-size: 1.3em;
+ }
+ .l-section__header > p {
+     font-size: 0.9em;
+ }
+ /* nav blue bar */
+ .responsiveNav{
+     width: 48%;
+     text-align: center;
+     margin:0;
+     padding-bottom: 20px;
+     border: 2px solid;
+     border-color: transparent transparent #F2F2F2 transparent;
+ }
+ #picker{
+     border-color: transparent transparent rgb(0, 100, 250) transparent;
+ }
+ #inscription{
+     position: absolute;
+     order : -1;
+     top: 30px;
+     right: 10px;
+ }
+ /*INTERACTIVE HEADER*/
+ .interactive-header{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     line-height: 30px;
+ }
+ .interactive-header > span{
+     font-size: 0.8em;
+     margin: 20px 0 -30px 0;
+ }
+ .search {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+ }
+ .search >input {
+    font-size: 1.1em;
+ }
+ .search > button {
+     width: 40px;
+     border-radius: 20%;
+ }
+ /*cacher texte Rechercher*/
+ .search > button > span {
+     display: none;
+ }
+ /*afficher search logo*/
+ .fa-search{
+     display: block;
+ }
+ .filters{
+     display: flex;
+     flex-wrap: wrap;
+ }
+ .filters > span{
+     width: 100%;
+     font-size: 15px;
+ }
+ .filters > a{
+     height: 39px;
+     font-size: 15px;
+     margin: 10px 5px 0 0;
+     padding: 0 10px 0 0;
+ }
+ /*cacher une partie de la bordure des filtres*/
+ .filters > a > .circle{
+     padding: 20px;
+     background-color: rgb(255, 255, 255);
+     top: -2px;
+     left: -6px;
+ }
+ .filters > a > i{
+     padding: 14px;
+     margin-left: 0px;
+     margin-right : 0.5em;
+     bottom: 1px;
+ }
+ 
+ /*-----CORPS------*/
+
+ section > header > h2 {
+     margin:0 0 0 20px; 
+     font-size: 20px;
+ }
+ .l-section{
+     border-radius: 0;
+ }
+ .l-section__popular{
+    width: 100%;
+    height: 600px;
+    flex-direction: column;
+}
+.l-section__popular > header {
+    height: 20px;
+}
+.l-section__popular > article {
+    display: flex;
+    justify-content: space-around;
+}
+/*LOGO  popular*/
+ .fa-chart-line{
+    font-size: 20px;
+    margin: 10px 20px 0 0;
+}
+ .l-section__accomodation{
+     height: auto;
+     width: 100%;
+     order: 1;
+     background-color: white;
+     flex-direction: column;
+ }
+ .l-section__accomodation > article{
+     display: flex;
+     justify-content: space-around;
+ }
+ .l-section__activity
+ {
+     height: auto;
+     width: 100%;
+     height: 1350px;
+     margin-top: 0;
+     margin-bottom: 0;
+ }
+.container__activity{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 410px;
+    margin : 0;
+}
+.container__activity >  article{
+    display: flex;
+    justify-content: space-around;
+}
+.card__accomodation{
+     width: 85%;
+     height: 180px;
+     margin-bottom: 20px;
+ }
+ .card__popular{
+    width: 85%;
+    height: 130px;
+}
+.card__activity{
+    width: 80vw;
+    height: 180px;
+    overflow: hidden;
+}
+.description{
+     height: 50%;
+     bottom: -12%;
+     padding-left: 10px;
+ }
+ .description >h3{
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.description > p {
+    font-size: 15px;
+}
+.description__popular{
+    width: 75%;
+    left: 40%;
+}
+.description__popular > p {
+    padding-left: 20px;
+    font-size: 13px;
+    margin-right: 50px;
+}
+.description__activity{
+    width: 100%;
+    height: 40%;
+    bottom: -10%;
+}
+.description__activity > h3{
+   margin-top: 20px;
+}
+.fa-star {
+    font-size: 10px;
+}
+h3 {
+    font-size: 15px;
+    margin-right: 50px;
+    padding-left: 20px;
+}
+.text-big{
+    font-size: 15px;
+}
+.title_activity{
+   font-size: 25px;
+}
+.photo{
+    max-width:200%; 
+    max-height:200%;
+    width: 350px;
+    height: 250px;
+    left: -50px;
+    top: -70px;
+}
+.photo__popular{
+    min-height: 50%;
+    min-width: 50%;
+    width: 150px;
+    height: 200px;
+    left : -10%;
+}
+ .photo__activity{
+     min-height: 100%;
+     min-width: 100%;
+ }
+ /*Vieux port et calanques*/
+.photo__activity--high
+{
+    max-width: 130%;
+    max-height: 130%;
+    top: -20%;
+}
+ /*-----------------------------------------------------FOOTER-----------------------------------*/
+ footer{
+     flex-direction: column;
+     width: 100%;
+     height: auto;
+     font-size  :100%;
+     margin-top: 0;
+ }
+ footer >div{
+     width: 100%;
+     flex-direction: column;
+     margin-left: 8vw;
+     margin-top : 10px;
+     margin-bottom: 20px;
+     line-height: 30px;
+ }
+}
+/***------------------------------------TABLETTE----------------------------------------------*/
+
+
+@media only screen and (min-width: 461px) and (max-width: 768px){
+ 
+/*SITE HEADER*/
+.l-section__header{
+    margin: 120px 5% 0 5%;
+}
+header{
+    flex-wrap: wrap;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    width: 100%;
+    margin : 0;
+    font-size: 1.5em;
+}
+.logo{
+    width: 30%;
+}
+/*Texte d'entrée*/
+.l-section__header > h1 {
+    margin-top: 30px;
+    line-height: 30px;
+   /* font-size: 1.4em;*/
+}
+.l-section__header > p {
+    font-size: 1.3em;
+}
+/* nav blue bar */
+.responsiveNav{
+    font-size: 1.3em;
+    width: 48%;
+    text-align: center;
+    margin:0;
+    padding-bottom: 20px;
+    border: 2px solid;
+    border-color: transparent transparent #F2F2F2 transparent;
+}
+#picker{
+    border-color: transparent transparent rgb(0, 100, 250) transparent;
+}
+#inscription{
+    position: absolute;
+    order : -1;
+    top: 30px;
+    right: 10px;
+    font-size: 1.3em;
+}
+/*INTERACTIVE HEADER*/
+.interactive-header{
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 30px;
+}
+.interactive-header > span{
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.search {
+    width: 50%;
+    justify-content: space-between;
+}
+.search > input {
+    font-size: 15px;
+}
+.search > button {
+    width: 40px;
+    border-radius: 20%;
+}
+/*cacher texte Rechercher*/
+.search > button > span {
+    display: none;
+}
+/*afficher search logo*/
+.fa-search{
+    display: block;
+}
+.filters{
+    display: flex;
+    flex-wrap: wrap;
+}
+.filters > span{
+    width: 15%;
+    align-self: center;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.filters > a{
+    height: 35px;
+    font-size: 14px;
+    margin: 10px 5px 10px 0;
+    padding: 0 10px 0 0;
+}
+/*cacher une partie de la bordure des filtres*/
+.filters > a > .circle{
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    top: -2px;
+    left: -6px;
+}
+.filters > a > i{
+    padding: 11px;
+    margin-left: 10px;
+    margin-right : 10px;
+    bottom: 1px;
+}
+
+/*-----CORPS------*/
+.l-section{
+    border-radius: 0;
+}
+.l-section > header{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+section > header > h2 {
+    margin:0; 
+    font-size: 2em;
+}
+/*logo popular*/
+.fa-chart-line{
+    margin: 0 0 0 20px;
+    font-size: 24px;
+}
+.l-section__accomodation{
+    margin: auto;
+    height: auto;
+    width: 90%;
+    order: 1;
+    background-color: white;
+    flex-direction: column;
+}
+.l-section__accomodation > header {
+    height: 120px;
+}
+.l-section__accomodation > article{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.l-section__popular{
+    width: 90%;
+    height: 800px;
+    margin: auto;
+    flex-direction: column;
+    align-content: space-between;
+}
+.l-section__popular > article {
+    display: flex;
+    justify-content: space-around;
+}
+
+.l-section__activity
+{
+    height: 1800px;
+    width: 100%;
+}
+.container__activity{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 580px;
+    margin : 0;
+}
+.container__activity >  article{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card__accomodation{
+    width: 80%;
+    height: 200px;
+    margin-bottom: 20px;
+}
+.card__popular{
+    width: 80%;
+    height: 200px;
+}
+.card__activity{
+    overflow: hidden;
+    width: 70vw;
+    height: 250px;
+}
+
+.description{
+    height: 50%;
+    bottom: -12%;
+}
+
+.description__popular{
+    width: 60%;
+    left: 50%;
+}
+.description__activity{
+    width: 100%;
+    height: 40%;
+    bottom: -10%;
+}
+.description >h3{
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.description > p {
+    font-size: 18px;
+}
+
+.description__popular > p {
+    padding-left: 20px;
+    font-size: 18px;
+    margin-right: 50px;
+}
+.description__activity > h3{
+   margin-top: 20px;
+}
+.fa-star {
+    font-size: 10px;
+}
+h3 {
+    font-size: 22px;
+    margin-right: 50px;
+    padding-left: 20px;
+}
+.text-big{
+    font-size: 15px;
+    margin-left: 80px;
+}
+.title_activity{
+   font-size: 25px;
+   
+}
+
+.photo__popular{
+    min-height: 100%;
+    min-width: 100%;
+}
+.photo{
+    max-width:200%; 
+    max-height:200%;
+    width: 600px;
+    height: 300px;
+    left: -50px;
+    top: -70px;
+}
+.photo__activity{
+    min-height: 100%;
+    min-width: 100%;
+}
+ /*Vieux port et calanques*/
+ .photo__activity--high
+ {
+     max-width: 130%;
+     max-height: 130%;
+     left: -5%;
+     top: -20%;
+ }
+    
+/*-----------------------------------------------------FOOTER-----------------------------------*/
+footer{
+    height: auto;
+    margin-top: 0;
+}
+footer >div{
+    width: 100%;
+    margin-top : 10px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    line-height: 25px ;
+}
+}
+
+/*-------------------------------------INTERMEDIAIRE, LITTLE DESKTOP------------------------*/
+
+@media only screen and (min-width: 769px) and (max-width: 1160px){
+
+.Siteheader{
+    height: 50px;
+}    
+.l-section > header {
+    height: 50px;
+}
+
+section > header > h2 {
+    font-size: 2.2vw;
+    margin : 50px 0 0 2vw;
+}
+.l-section__header > p{
+    font-size: 1.8vw;
+}
+ .title_activity{
+    font-size: 2.2vw;
+}
+/*-------------------HEADER AND NAV-----------------------------------*/
+nav{
+    font-size: 1.6vw;
+}
+/*---------------------------GLOBAL LAYOUT----------ALL SECTIONS---------------------------------*/
+.l-section__accomodation{
+    height: 550px;
+
+}
+.l-section__popular{
+    height: 550px;
+}
+
+.l-section__activity{
+    height: 500px;
+}
+/*INPUT*/
+.search {
+    width: 350px;
+}
+/*logo for popular*/
+.fa-chart-line{
+    font-size: 2vw;
+}
+footer{
+    margin-top: 0;
+}
+/*----------------------CARDS and PHOTO and DESCRIPTION------------*/
+/*STANDARDS*/
+.card__accomodation {
+    height: 160px;
+}
+.card__popular {
+    height:120px;
+}
+.container__activity{
+    height: 400px;   
+    }
+/*PARTICULAR SIZE*/
+.card__activity--high {
+    height: 400px;
+}
+.card__activity--large {
+    height: 170px;
+}
+.card__activity--square {
+    height: 230px;
+}
+.card__activity--rect {
+    height: 150px;
+}
+/*STANDARD PHOTOS*/
+.photo
+{
+    height: 100px;
+}
+
+/*PARTICULAR PHOTOS SIZE*/
+/*Hotel de la mer*/
+.photo__accomodation__resize{
+    height: 150px;
+}
+/*Hotel Amina*/
+.photo__accomodation__resize2{
+    height: 200px;
+
+}
+/*Hotel Bleu-Blanc*/
+.photo__resize{
+    max-height:200%;
+    height: 400px;
+}
+/*Vieux port et calanques*/
+.photo__activity--high
+{
+    height: 350px;
+}
+/*Pomègues*/
+.photo__activity--square
+{   top: -50px;
+    height: 300px;
+}
+/*Frioul*/
+.photo__activity--rect
+{
+    height: 120px;
+}
+/*Longchamp  NDGarde*/
+.photo__activity--large
+{
+    height: 150px;
+}
+}
