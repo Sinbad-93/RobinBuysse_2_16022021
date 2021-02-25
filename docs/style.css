@@ -11,28 +11,33 @@ body{
     flex-wrap: wrap;
     font-family: 'Raleway', sans-serif;
 }
-h2{
-    font-size: 2vw;
+h1{
+    font-size:150%;
+    font-weight: 800;
+    letter-spacing: -1px;
 }
 section > header > h2 {
-    font-size: 1.8vw;
-    margin : 50px 0 0 2vw;
+    font-size: 150%;
+    font-weight: 800;
+    margin : 0 0 0 2vw;
 }
 .l-section__header > p{
-    font-size: 1.5vw;
+    margin-top: -10px;
+    font-size: 110%;
+    font-weight: 500;
 }
 .text-big {
     width: 100%;
     margin-top: 0;
-    font-size: 1.6vw;
+    font-size: 120%;
     margin-left : 2vw;
-    font-weight: bold;
+    font-weight: 800;
  }
  .title_activity{
     font-size: 1.8vw;
 }
 .h3_hotel_name{
-    font-weight: bold;
+    font-weight: 800;
     display: flex;
     }
 /* HEADER NAV SECTION FOOTER ******until line 134*******/
@@ -40,21 +45,23 @@ section > header > h2 {
 header{
     display: flex;
     width: 100%;
-    height: 100px;
     flex-wrap: nowrap;
     justify-content: space-between;
 }
 .logo{
-    margin-left: 3vw;
+    margin-left: 1vw;
+    width: 194px;
+    height: 60px;
 }
 .Siteheader{
-margin : 20px 0 20px 0;
+margin : 20px 0 30px 0;
 }
 nav{
     margin-right : 1vw;
     color :rgb(0, 100, 250);
     margin-top : 20px;
-    font-size: 1.4vw;
+    font-size: 110%;
+    font-weight: 500;
 }
 a{
     cursor : pointer;
@@ -87,29 +94,41 @@ nav > a{
 }
 .l-section__header{
     width: 100%;
-    line-height: 10px;
     margin-bottom: 10px;
 }
 
 .l-section__accomodation{
     width: 60vw;
-    height: 800px;
+    height: 700px;
     background-color: #F2F2F2;
-    align-content: space-between;
+    align-content: space-around;
+    justify-content: space-evenly;
 }
+.l-section__accomodation> header{
+    margin-bottom: -40px;
+    margin-left: 12px;
+}
+
 .l-section__popular{
     width: 28vw;
-    height: 800px;
+    height: 700px;
     background-color: #F2F2F2;
+    justify-content: space-around;
+}
+.l-section__popular > header{
+    margin-top: 20px;
+    margin-bottom: -10px;
+    margin-left: 12px;
 }
 .l-section > header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    line-height: 60px;
     }
 .l-section__activity{
     width: 92vw;
-    height: 700px;
+    height: 600px;
     margin: 30px 1.5vw 30px 1.5vw;
 }
 /*-----------------------------------------------------FOOTER-----------------------------------*/
@@ -120,9 +139,16 @@ footer{
     margin-left: auto;
     margin-right: auto;
     margin-top: 70px;
-    line-height: 50px;
-    font-size  :1.4vw;
+    line-height: 40px;
+    font-weight: 500;
+    font-size  :110%;
     background-color: #F2F2F2;
+}
+footer > div > h3 {
+font-size: 110%;
+font-weight: 800;
+margin-bottom: 20px;
+margin-left: -15px;
 }
 footer >div{
     display: flex;
@@ -134,92 +160,91 @@ footer >div{
 /* INTERACTIVE SEARCH HEADER, LOGOS *******until line 233*****/
 /*---------------------------------------------INTERACTIVE SEARCH HEADER----------------------------------------*/
 .interactive-header{
-    line-height: 50px;
+    line-height: 60px;
     }
 /*INPUT*/
 .search {
     display: flex;
-    width: 500px;
-    height:40px;
-    border-radius: 12px;
+    width: 27%;
+    height:50px;
+    border-radius: 15px;
     border : 1px solid;
     border-color: #F2F2F2 ;
     margin-bottom: 2%;
 }
 /*cacher logo loupe*/
-.fa-search{
+.search > button > i
+{
     display: none;
 }
 .search > i{
-    border-radius: 7px 0 0 7px;
+    border-radius: 15px 0 0 15px;
     padding: 10px 16px 0px 16px;
     margin-right: 5px;
+    line-height: 30px;
     background-color: #F2F2F2;
 }
 .search > input{
     height: 85%;
     width: 65%;
     border-color : transparent;
-    font-size: 1.4vw;
-    font-weight: bold;
+    font-size: 120%;
+    font-weight: 750;
     color : black;
+    letter-spacing: -1px;
 }
 .search > button{
     height: 100%;
-    width: 120px;
+    width: 150px;
     background-color: #0065FC;
     color: white;
-    border-radius: 0 10px 10px 0px;
+    border-radius: 0 15px 15px 0px;
     border-color: transparent;
     cursor: pointer;
+    font-size: 110%;
+    font-weight: 500;
 }
 /*FILTERS*/
 .filters{
-    font-weight: bold;
-    font-size: 1.3vw;}
+    font-weight: 750;
+    font-size: 110%;
+}
 .filters > a {
     position: relative;
     border-radius: 50px/50px;
     border : 2px solid;
     border-color: #F2F2F2 #F2F2F2 #F2F2F2 transparent ;
-    padding: 0.5em;
-    margin-right : 0.5em;
-    margin-left : 1em;
-    font-size: 1.5vw; 
+    padding: 10px 20px 10px 10px;
+    margin-right : 10px;
+    margin-left : 20px;
+    font-size: 110%; 
 }
 .filters > a:hover{
     opacity : 0.7;
 }
-/*cacher une partie de la bordure des filtres*/
-.filters > a > .circle{
-    position :absolute;
-    width: 3px;
-    height:3px;
-    border-radius: 50%;
-    padding: 1em;
-    background-color: rgb(248, 245, 245);
-    bottom: 0px;
-    left: 0px;
-}
+
 .filters > a > i{
     position: relative;
     border-radius: 50%;
-    padding: 12px;
-    background-color: rgba(0, 100, 250,0.1);
-    color: #0065FC;
+    padding: 13px;
+    background-color: rgba(175, 207, 255, 0.651);
+    color: #0065fc;
     margin-left: -10px;
     margin-right : 0.5em;
+}
+.filters > a > .fa-child{
+    padding: 13px 16px 13px 16px;
 }
 /*-------------------------------------------------LOGOS-----------------------------------*/
 /*logo for popular*/
 .fa-chart-line{
     height: 20px;
-    margin : 60px 4vw 0 2vw;
-    font-size: 1.5vw;
+    margin : 8px 4vw 0 2vw;
+    font-size: 130%;
 }
 .fa-star{
     color :rgb(0, 100, 250);
-    font-size: 1vw;
+    font-size: 75%;
 }
 .fa-info{ 
     position: relative;
@@ -243,20 +268,20 @@ footer >div{
 }
 .card__accomodation {
     overflow: hidden;
-    border: 4px white solid;
+    border: 5px white solid;
     background-color: white;
     width: 16vw;
-    height: 230px;
+    height: 220px;
     box-shadow: 3px 3px 9px rgba(0, 0, 0,0.1), 3px 3px 9px rgba(0, 0, 0,0.1);
 }
 
 .card__popular {
     overflow: hidden;
-    border: 4px white solid;
-    border-radius: 10%;
+    border: 5px white solid;
+    border-radius: 20px;
     background-color: white;
-    width: 24vw;
-    height:180px;
+    width: 22vw;
+    height:150px;
     box-shadow: 3px 3px 9px rgba(0, 0, 0,0.1), 3px 3px 9px rgba(0, 0, 0,0.1);
 }
 
@@ -270,22 +295,23 @@ footer >div{
     flex-direction: column;
     justify-content: space-between;
     width: 20vw;
-    height: 600px;   
+    height: 500px;   
     }
 /*PARTICULAR SIZE*/
 .card__activity--high {
     width: 20vw;
-    height: 600px;
+    height: 500px;
     overflow: hidden;
 }
 .card__activity--large {
     width: 20vw;
-    height: 270px;
+    height: 230px;
+    overflow: hidden;
    
 }
 .card__activity--square {
     width: 20vw;
-    height: 320px;
+    height: 260px;
     overflow: hidden;
   
 }
@@ -383,14 +409,15 @@ footer >div{
     bottom: 5%;
     background-color:rgb(255, 255, 255);
     border-radius: 0 0 30% 30% ;
-    height: 30%;
+    height: 35%;
     width: 100%;
+    padding-top: 10px;
 
 }
 .description > p,h3 {
     padding: 0 0 0 1vw;
-    line-height: 5px;
-    font-size: 1.1vw;
+    line-height: 10px;
+    font-size: 110%;
     color: black;
     margin-top: 0.8em;
 }
@@ -404,11 +431,11 @@ footer >div{
     background-color:rgb(255, 255, 255);
     border-radius: 0 30% 30% 0 ;
     height: 100%;
-    width: 55%;
+    width: 65%;
 }
 .description__popular > p,h3{
     padding: 0 0 0 1vw;
-    font-size: 1.2vw;
+    font-size: 120%;
     color: black;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -425,12 +452,12 @@ footer >div{
     height: 50px;
     width: 19vw;
     padding: 0.5vw;
-    font-size: 1.3vw;
+    font-size: 110%;
     color: black;
     }
 
 .description__activity > h3 {
-    font-weight: bold;
+    font-weight: 800;
     margin: 10px 0 0 1vw;
 }
 /*Particular Case*/
@@ -438,13 +465,13 @@ footer >div{
     bottom: -7px;
     }
 .description__animahotel {
-        height: 41%;
-        bottom: -5%;
+        height: 48%;
+        bottom: -8%;
         border-radius: 0 0 0 0;
     }
 .description__hotelmer{
-    height: 40%;
-    bottom : -5%;
+    height:50%;
+    bottom : -9%;
     }
 
 /***********************------------MEDIA QUERIES----------------****************************/
@@ -452,8 +479,7 @@ footer >div{
 /***--------------------------------SMARTPHONE------------------------------------------------*/
 @media screen and (max-width: 460px){
 .body{
-    display: flex;
-    
+    display: flex;  
  }    
  /*SITE HEADER*/
  .l-section__header{
@@ -479,9 +505,9 @@ footer >div{
      padding-top: 13px;
  }
  /*Titre d'accroche*/
- .l-section__header > h1 {
+section > h1 {
      line-height: 30px;
-     font-size: 1.3em;
+     font-size: 120%;
  }
  .l-section__header > p {
      font-size: 0.9em;
@@ -549,13 +575,7 @@ footer >div{
      margin: 10px 5px 0 0;
      padding: 0 10px 0 0;
  }
- /*cacher une partie de la bordure des filtres*/
- .filters > a > .circle{
-     padding: 20px;
-     background-color: rgb(255, 255, 255);
-     top: -2px;
-     left: -6px;
- }
+
  .filters > a > i{
      padding: 14px;
      margin-left: 0px;
@@ -817,13 +837,6 @@ nav{
     font-size: 14px;
     margin: 10px 5px 10px 0;
     padding: 0 10px 0 0;
-}
-/*cacher une partie de la bordure des filtres*/
-.filters > a > .circle{
-    padding: 20px;
-    background-color: rgb(255, 255, 255);
-    top: -2px;
-    left: -6px;
 }
 .filters > a > i{
     padding: 11px;
