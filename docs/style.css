@@ -262,7 +262,7 @@ footer >div{
 /*-----------------------------------------------------layout, decoration, size-------------*/
 /*STANDARDS*/
 .card {
-    border-radius: 10%;
+    border-radius: 20px;
     position: relative ;
 
 }
@@ -286,9 +286,9 @@ footer >div{
 }
 
 .card__activity {
-    border-radius: 10%;
+    border-radius: 20px;
     background-color: white;
-    box-shadow: 0 3px 3px #F2F2F2, 0 3px 3px #F2F2F2;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0,0.1), 5px 5px 12px rgba(0, 0, 0,0.1);
 }
 .container__activity{
     display: flex;
@@ -323,24 +323,27 @@ footer >div{
 /*STANDARD PHOTOS*/
 .photo
 {
-    border-radius: 10% 10% 0 0 ;
+    border-radius: 20px 20px 0 0 ;
     position: absolute;
     max-width: 100%;
     max-height: 100%;
     width: 16vw;
     height: 170px;
+    top: -20px;
 }
 .photo__popular
 {
-    border-radius: 10%;
+    border-radius: 20px;
     position: absolute;
     max-width: 100%;
     max-height: 100%;
+    left: -50px;
 }
 .photo__activity
 {
-    border-radius: 10%;
+    border-radius: 20px;
     position: absolute;
+    object-fit: cover;
 }
 /*PARTICULAR PHOTOS SIZE*/
 /*Hotel de la mer*/
@@ -349,7 +352,7 @@ footer >div{
     max-height:200%;
     width: 17vw;
     height: 280px;
-    top : -22%;
+    top : -42%;
 }
 /*Hotel Amina*/
 .photo__accomodation__resize2{
@@ -357,24 +360,23 @@ footer >div{
     max-height:200%;
     width: 16vw;
     height: 400px;
-    top : -55%;
+    top : -65%;
 }
 /*Hotel Bleu-Blanc*/
 .photo__resize{
-    max-width: 200%;
-    max-height:200%;
-    width: 12vw;
-    height: 400px;
-    top : -52%;
+    max-width: 150%;
+    max-height:150%;
+    width: 10vw;
+    height: 250px;
+    left: -25px;
+    top : -35%;
+    object-fit: cover;
 }
 /*Vieux port et calanques*/
 .photo__activity--high
 {
     right : -12vw;
-    max-width: 300%;
-    max-height: 300%;
-    height: 550px;
-    
+    min-height: 100%;
 }
 /*Pomègues*/
 .photo__activity--square
@@ -392,7 +394,6 @@ footer >div{
     max-height:220%;
     width: 20vw;
     height: 220px;
-    
 }
 /*Longchamp  NDGarde*/
 .photo__activity--large
@@ -400,7 +401,7 @@ footer >div{
     max-width: 120%;
     max-height: 120%;
     width: 20vw;
-    height: 250px;
+    height: 200px;
 }
 /*DESCRIPTIONS*/
 /*STANDARDS*/
@@ -408,7 +409,7 @@ footer >div{
     position: absolute;
     bottom: 5%;
     background-color:rgb(255, 255, 255);
-    border-radius: 0 0 30% 30% ;
+    border-radius: 0 0 20px 20px ;
     height: 35%;
     width: 100%;
     padding-top: 10px;
@@ -429,7 +430,7 @@ footer >div{
     justify-content: space-between;
     right: -3%;
     background-color:rgb(255, 255, 255);
-    border-radius: 0 30% 30% 0 ;
+    border-radius: 0 20px 20px 0 ;
     height: 100%;
     width: 65%;
 }
@@ -448,7 +449,6 @@ footer >div{
     position: absolute;
     bottom: 0;
     background-color:rgb(255, 255, 255);
-    border-radius: 0 0 30% 30% ;
     height: 50px;
     width: 19vw;
     padding: 0.5vw;
@@ -458,16 +458,18 @@ footer >div{
 
 .description__activity > h3 {
     font-weight: 800;
-    margin: 10px 0 0 1vw;
+    margin: 18px 0 0 0;
+    line-height: 20px;
+    font-size: 105%;
 }
 /*Particular Case*/
 .description__activity--position{
     bottom: -7px;
     }
 .description__animahotel {
-        height: 48%;
-        bottom: -8%;
-        border-radius: 0 0 0 0;
+    height: 48%;
+    bottom: -8%;
+    border-radius: 0 0 0 0;
     }
 .description__hotelmer{
     height:50%;
