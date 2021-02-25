@@ -822,6 +822,9 @@ nav{
 .logo{
     width: 30%;
 }
+.l-section__interactive{
+    margin-top: 10px;
+}
 /*Texte d'entrée*/
 .l-section__interactive > h1 {
     margin-top: 30px;
@@ -878,7 +881,8 @@ nav{
     display: none;
 }
 /*afficher search logo*/
-.fa-search{
+.search > button > i
+{
     display: block;
 }
 .filters{
@@ -895,14 +899,16 @@ nav{
 .filters > a{
     height: 35px;
     font-size: 14px;
-    margin: 10px 5px 10px 0;
+    margin: 10px 30px 10px 0;
     padding: 0 10px 0 0;
 }
 .filters > a > i{
     padding: 11px;
-    margin-left: 10px;
     margin-right : 10px;
     bottom: 1px;
+}
+.filters > a > .fa-child{
+    padding: 12px 15px 12px 15px;
 }
 
 /*-----CORPS------*/
@@ -935,7 +941,6 @@ section > header > h2 {
     height: 120px;
 }
 .l-section__accomodation > article{
-    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -969,7 +974,7 @@ section > header > h2 {
 }
 
 .card__accomodation{
-    width: 80%;
+    width: 73%;
     height: 200px;
     margin-bottom: 20px;
 }
@@ -1000,6 +1005,7 @@ section > header > h2 {
 .description >h3{
     padding-left: 5px;
     padding-top: 5px;
+    margin-top: -5px;
 }
 .description > p {
     font-size: 18px;
@@ -1049,10 +1055,9 @@ h3 {
  /*Vieux port et calanques*/
  .photo__activity--high
  {
-     max-width: 130%;
-     max-height: 130%;
+     object-fit: cover;
+     top: -50%;
      left: -5%;
-     top: -20%;
  }
     
 /*-----------------------------------------------------FOOTER-----------------------------------*/
@@ -1066,6 +1071,9 @@ footer >div{
     margin-bottom: 20px;
     font-size: 17px;
     line-height: 25px ;
+}
+footer >div > h3{
+    line-height: 20px ;
 }
 }
 
@@ -1106,6 +1114,10 @@ nav{
 .l-section__activity{
     height: 500px;
 }
+section > header > h2 {
+    margin : 0;
+    line-height: 20px;
+}
 /*INPUT*/
 .search {
     width: 350px;
@@ -1116,6 +1128,9 @@ nav{
 }
 footer{
     margin-top: 0;
+}
+.filters{
+ font-size: 13px;
 }
 /*----------------------CARDS and PHOTO and DESCRIPTION------------*/
 /*STANDARDS*/
@@ -1140,6 +1155,26 @@ footer{
 }
 .card__activity--rect {
     height: 150px;
+}
+
+.description > h3 {
+    font-size: 12px;
+}
+.description > p {
+    font-size: 10px;
+    }
+.description__popular{
+    margin-right: 15px;
+}
+.description__popular > h3 {
+    font-size: 12px;
+    }
+.description__popular > p {
+    font-size: 10px;
+        }
+.description__activity > h3 {
+    margin-top: -1px;
+    font-size: 15px ;
 }
 /*STANDARD PHOTOS*/
 .photo
@@ -1182,4 +1217,24 @@ footer{
 {
     height: 150px;
 }
+}
+/*-------EXCEPTION MEDIUM SCREEN-------------------------*/
+@media only screen and (min-width: 1161px) and (max-width: 1400px){
+
+.description__popular > p, h3 {
+    font-size: 90%;
+}
+.card__popular > a > .description__popular > h3 {
+    margin-right: 50px;
+}
+.description__activity > h3 {
+    margin-top : 8px;
+}
+.search > input {
+    font-size: 17px;
+}
+section > header > h2 {
+    font-size: 20px;
+}
+
 }
