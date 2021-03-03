@@ -1,9 +1,9 @@
 /*-------SUMMARY : ------------*/
-/*BASE-GLOBAL FONT SIZE-------------*****7____until line 37***----------*/
-/* HEADER NAV SECTION FOOTER--------*****38____until line 134***-------*/
-/* INTERACTIVE SEARCH HEADER, LOGOS *****135____until line 233***-----*/
-/* CARDS and PHOTO and DESCRIPTION--*****233___until line 445***-----*/
-/*------------------MEDIA QUERIES***line 450 -------------------------*/
+/*BASE-GLOBAL FONT SIZE-------------*****7____until line 43***----------*/
+/* HEADER NAV SECTION FOOTER--------*****44____until line 159***-------*/
+/* INTERACTIVE SEARCH HEADER, LOGOS *****160____until line 260***-----*/
+/* CARDS and PHOTO and DESCRIPTION--*****261___until line 478***-----*/
+/*------------------MEDIA QUERIES***line 479 -------------------------*/
 /*--------------------------BASE---GLOBAL FONT SIZE---------until line 37-------------------------*/
 /* p body h1 h2  */
 body{
@@ -40,7 +40,7 @@ section > header > h2 {
     font-weight: 800;
     display: flex;
     }
-/* HEADER NAV SECTION FOOTER ******until line 134*******/
+/* HEADER NAV SECTION FOOTER ******until line 158*******/
 /*-------------------HEADER AND NAV-----------------------------------*/
 header{
     display: flex;
@@ -157,7 +157,7 @@ footer >div{
     margin-left: 3vw;
     margin-top : 30px;
 }
-/* INTERACTIVE SEARCH HEADER, LOGOS *******until line 233*****/
+/* INTERACTIVE SEARCH HEADER, LOGOS *******until line 260*****/
 /*---------------------------------------------INTERACTIVE SEARCH HEADER----------------------------------------*/
 .interactive-header{
     line-height: 60px;
@@ -189,7 +189,7 @@ footer >div{
     width: 65%;
     border-color : transparent;
     font-size: 120%;
-    font-weight: 750;
+    font-weight: 700;
     color : black;
     letter-spacing: -1px;
 }
@@ -206,7 +206,7 @@ footer >div{
 }
 /*FILTERS*/
 .filters{
-    font-weight: 750;
+    font-weight: 700;
     font-size: 110%;
 }
 .filters > a {
@@ -258,7 +258,7 @@ footer >div{
 .empty{
     color : #c5b5b5;
 }
-/*----------------------CARDS and PHOTO and DESCRIPTION---------*******until line 439****----------*/
+/*----------------------CARDS and PHOTO and DESCRIPTION---------*******until line 477****----------*/
 /*-----------------------------------------------------layout, decoration, size-------------*/
 /*STANDARDS*/
 .card {
@@ -477,7 +477,7 @@ footer >div{
     }
 
 /***********************------------MEDIA QUERIES----------------****************************/
-/* SMARTPHONE lines-480/721 *---* TABLETTE lines-744/1014 *---* LITTLE DESKTOP lines-1014/1127-----*/
+/* SMARTPHONE lines-480/802 *---* TABLETTE lines-803/1079 *---* LITTLE DESKTOP lines-1080/1221-----*/
 /***--------------------------------SMARTPHONE------------------------------------------------*/
 @media screen and (max-width: 460px){
  /*SITE HEADER*/
